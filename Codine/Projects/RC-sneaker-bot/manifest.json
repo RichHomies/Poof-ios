@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "RC Bot",
+  "version": "0.1.0",
+  "description": "bot for reigning champ drop",
+  "icons": { "16": "public/img/JSOIcon.png",
+           "48": "public/img/JSOIcon.png",
+          "128": "public/img/JSOIcon.png" },
+  "content_scripts": [
+      {
+        "matches": ["https://shop.reigningchamp.com/collections/footwear/products/reigning-champ-x-new-balance-m530.xml", "https://shop.reigningchamp.com/collections/footwear/products/reigning-champ-x-adidas-ultra-boost.xml", "http://shop.reigningchamp.com/collections/footwear/products/fw16-adidas-x-rc-mens-ultraboost.xml"],
+        "js": ["public/js/jquery.js", "bot.js"]
+      }
+  ]
+}

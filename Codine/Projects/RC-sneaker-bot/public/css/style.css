@@ -1,0 +1,220 @@
+#splashScreen {
+  /*Change directory path later  */
+  position: absolute;
+  top: 0vh;
+  right: 0vw;
+  width:100vw;
+  height:100vh;
+  left:0vw;
+  z-index: 999;
+  background: url('chrome-extension://fpfokpepdgmhdlfgkgihlgjkmckgmbok/public/css/JSOSplash.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+
+#lessonList {
+  position: absolute;
+  top: 0vh;
+  right: 0vw;
+  width:100vw;
+  height:100vh;
+  left:0px;
+  z-index: 999;
+  background: url('chrome-extension://fpfokpepdgmhdlfgkgihlgjkmckgmbok/public/css/JSOBG.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 6vw;
+  color: white;
+  text-align: center;
+
+          -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a {
+  text-decoration: none !important;
+  color: white !important;
+  text-align: center !important;
+  opacity: .90;
+}
+
+#splashBtn {
+  position: absolute;
+  top: 60%;
+  letter-spacing: 3px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.9vw;
+  margin: 0 auto;
+  height: 3vw;
+  left: 0%;
+  right: 0%;
+  width: 10vw;
+  color: white;
+  border-width: 0px;
+  background-color: #42a98b;
+
+        -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#about_toggler {
+  background-color: #f4bece;
+}
+
+#sidebar > div:nth-child(2) > div > div {
+}
+
+body {
+  background-color: #f4bece;
+}
+
+#splashBtn:hover{
+  opacity: .8;
+  width: 100vw;
+}
+
+#lessonDesc {
+  width: 50vw;
+  float: left;
+}
+
+#currentState {
+  width: 50vw;
+  height: 100vh;
+  text-align: left;
+  left:0px;
+  position: absolute;
+}
+
+#container {
+  float: right;
+  height: 100vh;
+  width: 50vw;
+
+          -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/* Menu Grid  */
+.panel {
+    display: inline-block;
+    width: 24.9vw;
+    height: 24.9vh;
+    line-height: 24.9vh;
+    opacity: .8;
+    cursor: pointer;
+}
+
+.panel:hover {
+  opacity: 1;
+}
+
+#twoRows{
+    width:100%;
+}
+
+#panel1 {
+  
+  background-color: #e984a2;
+}
+
+#panel2 {
+  background-color: #c8728b;
+}
+
+#panel3 {
+  background-color: #a3586e;
+}
+
+#panel4 {
+  background-color: #7e4758;
+}
+
+#panel5 {
+  background-color: #7ec8b2;
+}
+
+#panel6 {
+  background-color: #96d5c3;
+}
+
+#panel7 {
+  background-color: #b1e8d8;
+}
+
+#panel8 {
+  background-color: #ccf4e8;
+}
+
+#actions {
+  
+  background-color: #e984a2;
+  
+}
+
+#panel_css > div > div.CodeMirror-scroll {
+  background-color: #262626;
+}
+
+#home {
+  background: url('chrome-extension://fpfokpepdgmhdlfgkgihlgjkmckgmbok/public/img/JSOIcon.png') 0 50% no-repeat !important;
+  background-size: 42px !important;
+}
+
+.panel1Class {
+  left: 0;
+  height: 100vh;
+  font-size: 3.0em;
+  font-family: 'Quicksand', sans-serif;
+  background: url('chrome-extension://fpfokpepdgmhdlfgkgihlgjkmckgmbok/public/img/Lesson1.png') no-repeat center;
+  background-size: contain;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.panel2Class {
+  left: 0;
+  height: 100vh;
+  font-size: 3.0em;
+  font-family: 'Quicksand', sans-serif;
+  background: url('chrome-extension://fpfokpepdgmhdlfgkgihlgjkmckgmbok/public/img/Lesson2.png') no-repeat center;
+  background-size: contain;
+
+      -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.panel3Class {
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  font-size: 3.0em;
+  font-family: 'Quicksand', sans-serif;
+  background: url('chrome-extension://fpfokpepdgmhdlfgkgihlgjkmckgmbok/public/img/Lesson3.png') no-repeat center;
+  background-size: contain;
+
+      -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
