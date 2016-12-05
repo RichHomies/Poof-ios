@@ -7,6 +7,7 @@ import {
   StyleSheet
 } from 'react-native';
 
+import { Container, Header, Title, Content, Footer, FooterTab, Button, Icon, Fab } from 'native-base';
 import { Navigation } from 'react-native-navigation';
 
 const styles = StyleSheet.create({
@@ -22,19 +23,36 @@ const styles = StyleSheet.create({
 export default class LoginScreen extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      active: 'true'
+    };
   }
   render() {
     return (
-      <View>
-        <TouchableOpacity onPress={this.onPushPress.bind(this)}>
-          <Text style={styles.button}>Login</Text>
-        </TouchableOpacity>
-      </View>
+      <Container>
+        <Header>
+        </Header>
+        <Content>
+          <Title>Poof</Title>
+          <Fab
+              active={this.state.active}
+              direction="right"
+              containerStyle={{ marginLeft: 10 }}
+              style={{ backgroundColor: '#5067FF', fontSize: 30 }}
+              position="topLeft"
+              onPress={() => this.setState({ active: !this.state.active })}
+          >
+            <Icon name="md-arrow-forward" />
+          </Fab>
+          <Button transparent>
+              <Icon name='ios-call' />
+          </Button>  
+        </Content>
+      </Container>
       )
   }
   onPushPress() {
       this.props.navigator.push({
-        title: "Chat List",
         screen: "app.ChatList"
       });
   }

@@ -24,7 +24,6 @@ export default class ChatList extends Component {
   }
   newPoof() {
     this.props.navigator.push({
-      title: "New Message",
       screen: "app.NewMessageView"
     });
   }
