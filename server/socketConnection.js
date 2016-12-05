@@ -22,12 +22,6 @@ function connectClient(){
                 console.log('echo-protocol Connection Closed');
             });
 
-            // connection.on('message', function(message) {
-            //     if (message.type === 'utf8') {
-            //         console.log("Received: '" + message.utf8Data + "'");
-            //     }
-            // });
-
             resolve(connection);
         });
 
