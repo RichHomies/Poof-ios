@@ -1,28 +1,28 @@
 {
-  "name": "ReactNativeProject",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "react-native start",
-    "test": "jest",
-    "socket" : "node server/server.js"
-  },
-	"dependencies": {
-    "bluebird": "^3.4.6",
-		"native-base": "^0.5.18",
-		"react": "15.4.1",
-		"react-native": "^0.39.0",
-		"react-native-navigation": "next",
-		"react-router": "^3.0.0",
-    "websocket": "^1.0.23"
-	},
-	"devDependencies": {
-		"babel-jest": "17.0.2",
-		"babel-preset-react-native": "1.9.0",
-		"jest": "17.0.3",
-		"react-test-renderer": "15.4.1"
-	},
-	"jest": {
-		"preset": "react-native"
-	}
+		"name": "ReactNativeProject",
+		"version": "0.0.1",
+		"private": true,
+		"scripts": {
+				"start": "react-native start",
+				"test": "jest",
+				"socket": "node server/server.js"
+		},
+		"dependencies": {
+				"bluebird": "^3.4.6",
+				"native-base": "^0.5.18",
+				"react": "15.4.1",
+				"react-native": "^0.39.0",
+				"react-native-navigation": "next",
+				"react-router": "^3.0.0",
+				"websocket": "^1.0.23"
+		},
+		"devDependencies": {
+				"babel-jest": "17.0.2",
+				"babel-preset-react-native": "1.9.0",
+				"jest": "17.0.3",
+				"react-test-renderer": "15.4.1"
+		},
+		"jest": {
+				"preset": "react-native"
+		}
 }

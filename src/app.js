@@ -31,7 +31,7 @@ const createTabs = () => {
 
 Navigation.startSingleScreenApp({
   screen: {
-    screen: 'app.LoginScreen', // unique ID registered with Navigation.registerScreen
+    screen: 'app.ChatList', // unique ID registered with Navigation.registerScreen
     navigatorStyle: {navBarHidden: true, navBarNoBorder: true}, // override the navigator style for the screen, see "Styling the navigator" below (optional)
     navigatorButtons: {} // override the nav buttons for the screen, see "Adding buttons to the navigator" below (optional)
   },

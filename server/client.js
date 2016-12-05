@@ -15,12 +15,12 @@ var SocketLibrary = function(socket){
 
 SocketLibrary.prototype.sendMessage = function(url, body){
     var str = JSON.stringify({url: url, body:body});
-    this.socket.sendUTF(str);
+    this.socket.send(str);
 };
 
 SocketLibrary.prototype.subscribe = function(cb){
-    this.socket.on('message', function(message) {
-        var str = JSON.parse(message.utf8Data);
+    this.socket.onmessage(function(message) {
+        var str = JSON.parse(message);
         cb(str);
             
     });  

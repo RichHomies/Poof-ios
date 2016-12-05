@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ws from '../../server/client';
 
 import {
   Text,
@@ -9,6 +10,7 @@ import {
 import { Navigation } from 'react-native-navigation';
 import { Container, Header, Title, Content, Footer, FooterTab, Button, Icon, InputGroup, Input } from 'native-base';
 
+var sock;
 export default class NewMessageView extends Component {
   constructor(props) {
     super(props);
@@ -19,8 +21,21 @@ export default class NewMessageView extends Component {
   updateMessageBody(e) {
     this.setState({bodyText: e.target.value});
   }
+  componentDidMount() {
+    sock = ws.then(function(socket) {
+      socket.subscribe(function(message) {
+        console.log('message:', message)
+      }) 
+    })
+
+  } 
   sendPoof() {
-    
+    var that = this
+    sock.then(function(socket) {
+      console.warn(socket)
+
+      socket.sendMessage('joe', that.state.bodyText)
+    })
   }
   render() {
     return (
