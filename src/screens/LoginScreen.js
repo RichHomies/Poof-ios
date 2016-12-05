@@ -26,9 +26,8 @@ export default class LoginScreen extends Component {
   render() {
     return (
       <View>
-        <Text>This is the login screen</Text>
         <TouchableOpacity onPress={this.onPushPress.bind(this)}>
-          <Text style={styles.button}>Chat List</Text>
+          <Text style={styles.button}>Login</Text>
         </TouchableOpacity>
       </View>
       )

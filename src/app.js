@@ -14,6 +14,16 @@ const createTabs = () => {
       label: 'Two',
       screen: 'app.ChatList',
       title: 'Chat List'
+    },
+    {
+      label: 'Three',
+      screen: 'app.ChatView',
+      title: 'Chat View'
+    },
+    {
+      label: 'Four',
+      screen: 'app.NewMessageView',
+      title: 'New Message'
     }
   ];
   return tabs;
