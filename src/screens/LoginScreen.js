@@ -34,19 +34,10 @@ export default class LoginScreen extends Component {
         </Header>
         <Content>
           <Title>Poof</Title>
-          <Fab
-              active={this.state.active}
-              direction="right"
-              containerStyle={{ marginLeft: 10 }}
-              style={{ backgroundColor: '#5067FF', fontSize: 30 }}
-              position="topLeft"
-              onPress={() => this.setState({ active: !this.state.active })}
-          >
-            <Icon name="md-arrow-forward" />
-          </Fab>
-          <Button transparent>
-              <Icon name='ios-call' />
-          </Button>  
+          <Button success iconRight onPress={this.onPushPress.bind(this)}>
+              Next
+              <Icon name='ios-arrow-forward' />
+          </Button>
         </Content>
       </Container>
       )
